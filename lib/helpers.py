@@ -318,6 +318,6 @@ def getHostname(os_platform):
     """
     # Computername
     if os_platform == "linux" or os_platform == "osx":
-        return os.uname()[1]
+        return platform.uname()[1]
     else:
         return os.environ['COMPUTERNAME']
